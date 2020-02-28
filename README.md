@@ -1,5 +1,7 @@
 # Formal Verification of a SCUBA Dive Computer
 
+This repository contains formal methods associated with our EMSOFT 2019 paper [Verifiably safe SCUBA diving using commodity sensors: work-in-progress](https://dl.acm.org/doi/10.1145/3349568.3351554)
+
 [SCUBA diving](https://en.wikipedia.org/wiki/Scuba_diving) is an activity in which divers remain underwater for prolonged periods by using a self-contained breathing apparatus. Diving is safety critical because changing depth too rapidly or running out of oxygen before surfacing can result in [life-threatening consequences](https://en.wikipedia.org/wiki/Decompression_sickness). These risks are currently minimized by using a wrist-mounted, 'air-integrated' dive computer that monitors time, depth and air tank pressure (received through expensive wireless transceivers or a hose). These computers are costly for the average recreational dive. 
 
 We present a [hybrid systems model](https://en.wikipedia.org/wiki/Hybrid_system) and safety proof for a SCUBA diving computer that estimates air consumption of the diver using commodity heart rate sensors. We employ a mathematical model of oxygen uptake in response to exercise and thereby predict the time remaining for the air supply to be depleted, as well as obviate the need for a tank-mounted wireless transmitter or the cumbersome hose integrated computer for directly monitoring tank pressure. We formally verify a controller that ensures the diver can always surface without running out of breathable air.
